@@ -1,0 +1,25 @@
+{
+    "name": "visal/laravel-phonepe",
+    "description": "PhonePe Payment Gateway Integration for Laravel 10+",
+    "type": "library",
+    "autoload": {
+      "psr-4": {
+        "Visal\\PhonePe\\": "src/"
+      }
+    },
+    "require": {
+      "php": "^8.1",
+      "illuminate/support": "^10.0"
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Visal\\PhonePe\\PhonePeServiceProvider"
+        ],
+        "aliases": {
+          "PhonePe": "Visal\\PhonePe\\Facades\\PhonePe"
+        }
+      }
+    }
+  }
+  
